@@ -1,0 +1,92 @@
+*{
+    --btn-color:#c2e964;
+    --placeholder: #cdcecb;
+    --main-back-ground:#fbfcf9;
+    --secondry-color:#4f9682;
+}
+.custom-mt-4 {
+    margin-top: 4.5rem!important;
+}
+.p-color{
+    color:var(--placeholder);
+}
+.p-color-active{
+    color:var(--secondry-color);
+}
+.price-not-active{
+    position: relative;
+    font-size: 13px;
+    margin-top: 3px;
+}
+.price-not-active::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    top: 9px;
+    left: 5px;
+    width: 97%;
+    background-color: var(--placeholder);
+
+}
+.divuli {
+    margin-bottom: 20px;
+    position: relative;
+    display: flex;
+}
+.divuli.active::before {
+    position: absolute;
+    content: "";
+    width: 3px;
+    height: 55px;
+    top: 38px;
+    left: 18px;
+    background-image: linear-gradient(to bottom, #2a8f81, white);
+}
+
+p.uli-p {
+    width: 40px;
+    text-align: center;
+    height: 40px;
+    background-color: white;
+    border-radius: 50%;
+    padding-top: 7px;
+}
+p.uli-p.active {
+    width: 65px;
+    color:white;
+    background-color: #2a8f81;;
+}
+.ulimaintex {
+    margin-left: 30px;
+    text-align: start;
+}
+.uli-h{
+    font-size: 23px;
+    font-weight: bold;               
+}
+
+/* Media query for small screens (phones) */
+@media (max-width: 576px) {
+    h1 {
+        font-size: 2rem; 
+    }
+
+
+}
+
+/* Media query for medium screens (tablets) */
+@media (min-width: 577px) and (max-width: 992px) {
+    h1 {
+        font-size: 2.5rem; 
+    }
+
+}
+
+/* Media query for large screens (desktops) */
+@media (min-width: 993px) {
+    h1 {
+        font-size: 3rem; 
+    }
+
+
+}
